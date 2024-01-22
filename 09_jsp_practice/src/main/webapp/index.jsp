@@ -1,9 +1,9 @@
 <%@ page pageEncoding="UTF-8"%>
-<jsp:include page="common/header.jsp" />
+<%@ include file="common/header.jsp" %>
 <section>
-	<jsp:include page="default.jsp"/>
+	<%@ include file="default.jsp" %>
 </section>
-<jsp:include page="common/footer.jsp" />
+<%@ include file="common/footer.jsp" %>
 
 
 

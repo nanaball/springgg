@@ -1,7 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!-- join.jsp -->
-<%@ include file="common/header.jsp" %>
 <section>
 	<script type="text/javascript" src="js/input.js" ></script>
 	<form action="joinCheck.jsp" method="POST">
@@ -66,4 +65,3 @@
 	 	</table>	
 	 </form>
  </section>
- <%@ include file="common/footer.jsp" %>
