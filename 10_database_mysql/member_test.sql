@@ -1,7 +1,10 @@
 use develop_jsp;
 
+<<<<<<< HEAD
 -- 실행할 쿼리 문 블럭 지정 후 alt + x, or alt + c
 -- 또는 실행할 쿼리 문 블럭 지정 후 우 클릭 execute selected text 선택 
+=======
+>>>>>>> edc554b7da0dea32219a6af8430c514100cb2073
 SHOW TABLES;
 -- member_test.sql
 

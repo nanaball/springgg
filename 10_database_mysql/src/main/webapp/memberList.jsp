@@ -8,6 +8,7 @@
 <head>
 <meta charset="UTF-8">
 <title>회원 목록</title>
+<<<<<<< HEAD
 <style type="text/css">
 	table tr:nth-child(n+3):hover{
 		cursor:pointer;
@@ -25,6 +26,11 @@
 <body>
 	<%
 		// 정적쿼리시 statement 이용하는 것이 더 좋음
+=======
+</head>
+<body>
+	<%
+>>>>>>> edc554b7da0dea32219a6af8430c514100cb2073
 		Statement stmt = conn.createStatement();
 		String sql = "SELECT num, name, addr FROM member ORDER BY num DESC";
 		ResultSet rs = stmt.executeQuery(sql);
