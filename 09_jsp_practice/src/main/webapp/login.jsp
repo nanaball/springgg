@@ -20,6 +20,7 @@
 	 				<input type="password" name="pass" data-msg="비밀번호"/>
 				</td>
 	 		</tr>
+			
 	 		<!-- 로그인 상태 유지 기능 추가  -->
 	 		<tr>
 	 			<td colspan="2">
