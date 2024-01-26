@@ -157,5 +157,17 @@ public class PageMaker {
 				+ ", last=" + last + ", prev=" + prev + ", next=" + next + "]";
 	}
 	
-	
+	/**
+	 * 
+	 * @param page 이동할 페이지 번호
+	 * @return 전달받은 페이지 번호로 페이징 처리에 필요한 파리미터를 이용해서 QueryString 생성 반환
+	 */
+	public String makeQuery(int page) {
+		StringBuilder sb = new StringBuilder("?");
+		sb.append("page="+page);
+		sb.append("&");
+		sb.append("perPageNum="+cri.getPerPageNum());
+		return sb.toString();
+		
+	}
 }
