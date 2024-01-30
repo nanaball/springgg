@@ -5,9 +5,9 @@
 <%@ include file="/common/header.jsp"%>
 <section>
 	<div>
-		<h1>접근 권한이 없습니다.</h1>
-		<h3> 관리자에게 문의 ㄱㄱ</h3>
-		<a href="index.jsp">메인으로</a>
+		<h1>요청하신 페이지를 찾을 수 x</h1>
+		<h3>확인 후 다시 요청 ㄱㄱ</h3>
+		<a href="javascript:history.go(-1);">이전페이지로 이동</a>
 	</div>
 </section>
 	<!-- url 위치 기준 -->
