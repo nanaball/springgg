@@ -98,3 +98,5 @@ CREATE TABLE test_code(
 );
 
 SELECT * FROM test_code;
+
+SELECT * FROM qna;
