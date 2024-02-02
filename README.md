@@ -10,3 +10,13 @@ spring + my sql
 - 240131
   _13_EL_jstl
   jstl 연산 및 제어문
+- 240201
+  _13_final_mvc_template
+  회원가입/
+  자동로그인/
+  이메일로 비밀번호 찾기
+- 240202
+  _13_final_mvc_template
+  질문답변 게시판/
+  페이징처리/
+  수정/ 삭제
