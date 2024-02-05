@@ -1,0 +1,40 @@
+package com.bitc.controller;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class SampleController {
+	
+	// method가 제외되면 get, post 둘다 처리
+	@RequestMapping("doA")
+	// /WEB-INF/views/ + doA + .jsp
+	public void doA() {
+		System.out.println("doA 호출");
+	}
+
+	@RequestMapping("doB")
+	public String doB() {
+		System.out.println("doB 요청");
+		return "home";
+	}
+	
+	@RequestMapping("doC")
+	public String doC(HttpServletRequest request) {
+		System.out.println("doC 호출");
+		String msg = request.getParameter("msg");
+		request.setAttribute("modelTest", msg);
+		return "home";
+	}
+	
+	@RequestMapping(value = "doD", method = RequestMethod.GET)
+	public String doD() {
+		
+		return "result";
+	}
+	
+	
+	
+}

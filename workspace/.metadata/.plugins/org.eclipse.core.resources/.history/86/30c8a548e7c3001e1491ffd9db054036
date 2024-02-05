@@ -1,0 +1,13 @@
+package com.bitc.controller;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class SampleController {
+	
+	@RequestMapping("doA")
+	public void doA() {
+		System.out.println("doA 호출");
+	}
+
+}
