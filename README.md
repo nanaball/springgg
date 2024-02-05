@@ -20,3 +20,9 @@ spring + my sql
   질문답변 게시판/
   페이징처리/
   수정/ 삭제
+
+
+- 240205
+  _mvc_part01_controller/ structure
+  자바 11/ 톰캣9/ 스프링 3.1.1 ver 다운 그레이드
+  구조와 컨트롤러
