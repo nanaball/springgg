@@ -26,3 +26,6 @@ spring + my sql
   _mvc_part01_controller/ structure
   자바 11/ 톰캣9/ 스프링 3.1.1 ver 다운 그레이드
   구조와 컨트롤러
+  - 240206
+  _mvc_part01_lombok/ DI_IOC
+lombok(getter/setter)  / DI_IOC(의존성 주입/ 제어의 역전)
