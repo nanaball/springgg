@@ -29,3 +29,8 @@ spring + my sql
 - 240206
   _mvc_part01_lombok/ DI_IOC
 lombok(getter/setter)  / DI_IOC(의존성 주입/ 제어의 역전)
+- 240207
+  _mvc_part01_lombok/ DI_IOC
+이미지 삽입 / second servlet 
+
+my batis/ db 연결
