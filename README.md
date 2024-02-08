@@ -1,4 +1,4 @@
-spring + my sql
+### spring model1/ model2 + my sql
 
 - 240129
   _12_db_member_answer
@@ -21,6 +21,12 @@ spring + my sql
   페이징처리/
   수정/ 삭제
 
+<br/>
+<hr/>
+<br/>
+
+### spring mvc + my sql
+
 
 - 240205
   _mvc_part01_controller/ structure
@@ -38,5 +44,10 @@ my batis/ db 연결
 _mvc_part01_05_db_test
 my batis 마무리/ orm
 
+<br/>
+<hr/>
+<br/>
 
-** 폴더 이름 수정시 pom.xml에서 <name>mvc_part01_01_structure</name>도 수정해주고 404 오류시 [참조](https://study-ce.tistory.com/60)
+### 참고 자료
+
+- 폴더 이름 수정시 pom.xml에서 <name>mvc_part01_01_structure</name>도 수정해주고 404 오류시 [참조](https://study-ce.tistory.com/60)
