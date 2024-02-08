@@ -4,6 +4,38 @@ PUBLIC "-//mybatis.org/DTD Mapper 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="boardMapper">
 	
+	<!-- 게시글 등록 -->
+	<insert id = "createBoard" statementType = "PREPARED" parameterType="boardVO">
+		INSERT INTO tbl_board(title, content, writer)
+			VALUES(#{title}, #{content}, #{writer})
+	</insert>
+	
+	<!-- 게시글 상세보기/ 게시글 번호로 정보 검색 -->
+	<select id="read" parameterType="int" resultType="boardVO">
+		SELECT * FROM tbl_board WHERE bno = #{bno}		
+	</select>
+	
+	<!-- 게시글 수정 -->
+	<update id="updateBoard" parameterType="boardVO">
+		UPDATE tbl_board SET 
+			title = #{title}, content=#{content}, writer=#{writer}, regdate = now() WHERE bno = #{bno}
+	</update>
+	
+	<!-- 게시글 삭제 -->
+	<delete id="deleteBoard" parameterType="int">
+		DELETE FROM tbl_board WHERE bno = #{bno}
+	</delete>
+	
+	<!-- 게시글 목록 -->
+	<select id="boardList" resultType = "boardVO" statementType="STATEMENT">
+		SELECT * FROM tbl_board ORDER BY bno DESC
+	</select>
+	
+	<!-- 게시글 조회수 증가  -->
+	<update id="updatecount">
+		UPDATE tbl_board SET viewcnt = viewcnt + 1 where bno = #{bno}
+	</update>
+	
 </mapper>
 
 
