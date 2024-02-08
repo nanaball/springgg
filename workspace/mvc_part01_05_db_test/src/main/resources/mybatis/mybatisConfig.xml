@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- classpath:/mybatis/mybatisConfig.xml -->
+
+<!-- mybatis dtd 검색만 해도 나옴 -->
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD config 3.0 //EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+	<typeAliases>
+		<!-- 클래스가 여러개면 추가해서 쓰면 됨 -->
+		<typeAlias type="com.bitc.db_test.vo.MemberVO" alias="member" />
+		
+		<!-- package에 포함된 모든 클래스에 별칭 부여 MemberVO ==  memberVO // typeAlias와 중복사용x -->
+		<!-- <pakage name="com.bitc.db_test.vo" /> -->
+	</typeAliases>
+	<mappers>
+		<mapper resource="mybatis/sql/memberMapper.xml" />
+	</mappers>
+</configuration>
