@@ -36,4 +36,7 @@ _mvc_part01_05_db_test
 my batis/ db 연결
 - 240208
 _mvc_part01_05_db_test
-my batis 마무리/ orm 
+my batis 마무리/ orm
+
+
+** 폴더 이름 수정시 pom.xml에서 <name>mvc_part01_01_structure</name>도 수정해주고 404 오류시 [참조](https://study-ce.tistory.com/60)
