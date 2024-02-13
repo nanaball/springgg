@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h1>REGISTER BOARD</h1>
+	<!-- action이 생략될 시 현재 주소표시줄 요청으로 다시 요청 -->
 	<form method="POST">
 		<div>
 			<label>TITLE</label>

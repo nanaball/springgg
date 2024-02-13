@@ -24,7 +24,8 @@
 		<div>
 			<a href="modify?bno=${boardVO.bno}">MODIFY</a> |
 			<a href="remove?bno=${boardVO.bno}">DELETE</a> |
-			<a href="listPage">LIST</a>
+			${criteria}
+			<a href="listPage?page=${cri.page}&perPageNum=${cri.perPageNum}">LIST</a>
 		</div>
 	<script>
 		var result = '${result}';
