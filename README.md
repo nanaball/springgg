@@ -37,12 +37,19 @@
 lombok(getter/setter)  / DI_IOC(의존성 주입/ 제어의 역전)
 - 240207
   _mvc_part01_lombok/ DI_IOC
-이미지 삽입 / second servlet 
-_mvc_part01_05_db_test
+이미지 삽입 / second servlet<br/>
+    _mvc_part01_05_db_test
 my batis/ db 연결
+
 - 240208
 _mvc_part01_05_db_test
 my batis 마무리/ orm
+
+- 240213
+_mvc_part01_06_board
+my batis 문제 및 해설<br/>
+  _mvc_part02_01_filter
+filter
 
 <br/>
 <hr/>
