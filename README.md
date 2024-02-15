@@ -51,9 +51,13 @@ my batis 문제 및 해설<br/>
   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _mvc_part02_01_filter : 
 filter
 
-- 240213
+- 240214
 mvc_part02_02_rest :
-rest / get, post, put 
+rest / get, post, put
+
+- 240215
+mvc_part02_03_comments :
+comment
 
 <br/>
 <hr/>
