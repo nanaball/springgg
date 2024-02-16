@@ -52,12 +52,18 @@ my batis 문제 및 해설<br/>
 filter
 
 - 240214
-mvc_part02_02_rest :
+_mvc_part02_02_rest :
 rest / get, post, put
 
 - 240215
-mvc_part02_03_comments :
-comment
+_mvc_part02_03_comments :
+comment 등록
+
+- 240216
+_mvc_part02_03_comments :
+comment 수정/ 삭제/ 페이징처리
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _mvc_part02_04_file_control :
+파일 업로드/ 멀티파트/ 1개파일 업로드하기
 
 <br/>
 <hr/>
