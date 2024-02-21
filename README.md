@@ -65,6 +65,13 @@ comment 수정/ 삭제/ 페이징처리<br/>
  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; _mvc_part02_04_file_control :
 파일 업로드/ 멀티파트/ 1개파일 업로드하기
 
+- 240217
+_mvc_part02_04_file_control :
+파일여러개 업로드하기 / 멀티플 업로드/ ajax drag n drop 업로드
+
+- 240218
+_mvc_part02_04_file_control :
+ajax drag n drop 파일 업로드 삭제/ 썸네일/ 경로 숨김/ 이미지 변경
 <br/>
 <hr/>
 <br/>
