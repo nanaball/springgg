@@ -83,7 +83,7 @@ aop / before, after, around
 
 - 240227
 _mvc_part03_aop_message :
-aop / before, after, around
+aop / before/ after/ after returning/ after throwing/ around
 <br/>
 <hr/>
 <br/>
