@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security"
+	xsi:schemaLocation="http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-5.8.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- security-context.xml -->
+<!-- http 요청 처리 정보 -->
+<!-- auto-config="true" 로그인 페이지/ http 기본 인증 / 로그아웃 기능 제공 -->
+<security:http>
+<!-- <security:http auto-config="true"> -->
+	
+	<security:intercept-url pattern="/test/master" access="hasRole('ROLE_ADMIN')"/>
+	<security:intercept-url pattern="/test/member" access="hasAnyRole('ROLE_ADMIN', 'ROLE_MEMBER')"/>	
+	<security:intercept-url pattern="/test/all" access="permitAll"/>
+
+<!--  						 
+	username-parameter="u_id" 
+ 	password-parameter="u_pw" 를 지정해줘야 
+ 	내가 만든 id랑 동일 시 해서 시큐리티에서 넘어감 아니면 username 과 password라고 써야함
+ -->
+	<security:form-login login-page="/login"
+ 						 login-processing-url="/login"
+ 						 username-parameter="u_id" 
+ 						 password-parameter="u_pw"/>
+ 						 
+ 	<!-- cookie session 자동 로그인 -->
+ 	<security:remember-me 	remember-me-cookie="CGG"
+ 							remember-me-parameter="rememberMe"
+ 							token-validity-seconds="86400"/>					 
+ 						 			 
+	<security:logout logout-url="/logout" 
+					 invalidate-session="true"
+					 logout-success-url="/login" />
+</security:http>
+
+<security:authentication-manager>
+	<security:authentication-provider>
+		<security:user-service>
+			<security:user name="master" password="{noop}master" authorities="ROLE_ADMIN"/>
+			<security:user name="member" password="{noop}member" authorities="ROLE_MEMBER"/>
+		</security:user-service>
+	</security:authentication-provider>
+</security:authentication-manager>
+</beans>
